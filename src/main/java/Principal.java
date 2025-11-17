@@ -1,6 +1,6 @@
 
 public class Principal {
-
+    
     public void bubblesort(int c[], int n) {
         int troca = 1;
         int m = n - 1;
@@ -21,6 +21,11 @@ public class Principal {
         }
     }
 
+    /**
+     * Classifica um vetor de tamanho quantidade com valores de 0 até intervalo usando o método bubblesort.
+     * @param quantidade Quantidade de elementos no vetor.
+     * @param intervalo Intervalo de valores a ser utilizado para gerar o vetor.
+     */
     public void classificar(int quantidade, int intervalo) {
         int x[] = new int[quantidade];
         int n = quantidade;
@@ -37,13 +42,13 @@ public class Principal {
         }
 
         bubblesort(x, n);
-
+        
         System.out.println("Depois: ");
         for (int i = 0; i < n; i++) {
             System.out.println((i + 1) + " - " + x[i]);
         }
     }
-
+    
     public static void main(String args[]) {
         new Principal().classificar(100, 100);
     }
