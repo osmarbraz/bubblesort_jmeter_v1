@@ -41,6 +41,7 @@ public class Principal {
             System.out.println((i + 1) + " - " + x[i]);
         }
 
+        //Utiliza o método bubblesort
         bubblesort(x, n);
         
         System.out.println("Depois: ");
